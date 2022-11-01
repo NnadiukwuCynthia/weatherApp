@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+      <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+    <div class="page_container">
+      <div class="title-div">
+        <h1>Local Weather App</h1>
+      </div>
+      <div class="container">
+        <i class="fas fa-arrow-left back"> back</i>
+        <div class="result_div">
+          <div class="img-div">
+            <img src="" class="icon" />
+          </div>
+          <h1 class="city_details"></h1>
+          <div class="flex">
+            <p class="temp"></p>
+            <p class="deg">&#8451;</p>
+          </div>
+          <p class="desc" style="font-size: 2rem"></p>
+        </div>
+        <div class="not_found"></div>
+        <div class="input_div">
+          <input
+            type="search"
+            class="inp"
+            placeholder="Input State or Country....."
+          />
+        </div>
+        <div class="loader_div">
+          <div class="lds-ripple">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="btn_div">
+          <button class="searchBtn">Get Weather</button>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
